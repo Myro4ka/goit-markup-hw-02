@@ -19,7 +19,9 @@ body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  letter-spacing: 3%;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   line-height: 1.2;
 }
 ul {
@@ -32,17 +34,16 @@ a {
 /* Стилі для index.html */
 /* site-nav */
 .page-header {
-  font-style: 500;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 .logo {
   color: #000000;
   font-family: Raleway, sans-serif;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }
 .logo > span {
   color: var(--accent-color);
@@ -73,11 +74,23 @@ a {
 .hero-title {
   color: var(--primary-white-color);
   background-color: var(--accent-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-button {
+.hero.button {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.hero.button:hover,
+.hero.button:focus {
+  background-color: #188ce8;
 }
 
 /* features */
@@ -86,27 +99,50 @@ a {
 }
 .features-text {
   color: var(--second-text-color);
+  line-height: 1.71;
 }
 
 /* services */
+.services-title,
+.team-title {
+  font-size: 36px;
+}
 
 /* team */
+.team {
+  font-size: 16px;
+}
+.team-name {
+  font-weight: 500;
+}
 .team-text {
   color: var(--second-text-color);
 }
 
 /* footer */
-
+address {
+  font-style: normal;
+}
 /* bgc вказано для відображення тексту */
 .contacts .location {
   color: var(--primary-white-color);
   background-color: var(--accent-bg-color);
+  line-height: 1.71;
+}
+.contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--accent-bg-color);
+  line-height: 1.71;
 }
 
 /* Стилі для potfolio.html */
 .button {
   background-color: var(--second-bg-color);
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.63;
 }
 .button:hover,
 .button:focus {
@@ -115,7 +151,12 @@ a {
 }
 .works-title {
   color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .works-type {
   color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
