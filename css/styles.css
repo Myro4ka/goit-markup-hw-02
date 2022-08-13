@@ -69,10 +69,12 @@ a {
   color: var(--accent-color);
 }
 
-/* hero (bgc вказано для відображення тексту)  */
+/* hero (bgc вказано тимчсово для відображення тексту)  */
+.hero {
+  background-color: var(--accent-bg-color);
+}
 .hero-title {
   color: var(--primary-white-color);
-  background-color: var(--accent-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -94,6 +96,8 @@ a {
 
 /* features */
 .features-title {
+  font-size: inherit;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 .features-text {
@@ -118,13 +122,18 @@ a {
 }
 
 /* footer */
+.footer {
+  background-color: var(--accent-bg-color);
+}
+.footer .logo {
+  color: var(--primary-white-color);
+}
 address {
   font-style: normal;
 }
 /* bgc вказано для відображення тексту */
 .contacts .location {
   color: var(--primary-white-color);
-  background-color: var(--accent-bg-color);
   line-height: 1.71;
 }
 .contacts .link {
